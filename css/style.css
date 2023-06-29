@@ -1,0 +1,55 @@
+#wrapper{
+    display: grid;
+    grid-template-areas:"logo header header"
+		"innergrid innergrid innergrid"
+        
+        "main main images"
+		"main main images"}
+#logo, #header, #innergrid, #main, #curriculum, #aboutme, #curriculum, #contact{
+    border:1px solid black;
+}
+#logo{
+	grid-area: logo;
+	background-color: #E2EFF9;
+	font-family:monospace;
+}
+
+
+#header{
+    grid-area: header;
+    background-color: #E2EFF9
+}
+#innergrid{
+	grid-area: innergrid;
+	text-align: center;
+    display: grid;
+    grid-template-areas: "aboutme curriculum contact";
+	padding: 10px;
+}
+#aboutme{
+    grid-area: aboutme;
+    background-color: #C2BCBC
+}
+#curriculum{
+    grid-area: curriculum;
+    background-color: #C2BCBC
+}
+#contact{
+    grid-area: contact;
+    background-color: #C2BCBC
+}
+#main{
+    grid-area: main;
+    background-color: #DBDBDB;
+	width: 1000px;
+	height: 440px;
+	font-family:cursive
+}
+#images{
+    grid-area: images;
+    background-color: white;
+	height: 440px;
+	padding-top: 140px;
+	
+}
+
